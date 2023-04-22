@@ -1,0 +1,165 @@
+/* 设置网页的整体样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+a{ text-decoration:none} 
+
+a:hover{ text-decoration:none}
+/* 视频的设置 */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  filter: brightness(50%);
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 光晕效果 */
+.glow {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 5px rgba(255, 255, 255, 1);
+}
+/* 顶栏样式 */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 主要内容样式 */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* 左栏样式 */
+.profile {
+  width: 50%;
+}
+
+.profile h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.profile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* 右栏样式 */
+.gallery {
+  width: 68%;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.gallery img {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+/* 图片展示样式 */
+.gallery {
+  position: relative;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.gallery img {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+/* 直播间链接按钮样式 */
+.btn {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #ffc6fb;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* 将按钮置于其他内容之上 */
+}
+
+.btn:hover:before {
+  content: "点击直达直播间";
+  display: block;
+  position: absolute;
+  top: -35px;
+  left: -75%;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn .text {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 71%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
